@@ -17,6 +17,7 @@ public class employeescontroller {
 @GetMapping ("/employees")
 @ResponseBody
 public String getEmployees () {
+    //System.out.println("testi");
     return "displying the lis of empoyees";
     }    
 
@@ -24,6 +25,7 @@ public String getEmployees () {
 @GetMapping("/employees/{id}")
 @ResponseBody
 public String getEmployee (@PathVariable("id") Long id) {
+    //System.out.println("Fetching the employee details for the id: " +id);
         return "Fetching the employee details for the id: " +id;  
 
 }   
@@ -37,7 +39,7 @@ public String getEmployee (@PathVariable("id") Long id) {
     //localhost:8080/employees?id=3
      @DeleteMapping("/employees")
     public String deleteEmployee (@RequestParam("id") Long id){
-            return "Deleting the employee details fotr the id: "+id;
+            return "Deleting the employee details for the id: "+id;
     }
 
 
