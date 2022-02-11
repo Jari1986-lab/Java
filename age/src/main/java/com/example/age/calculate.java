@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class calculate {
+public class calculateplus {
    
     //@GetMapping("/calculate")
     @RequestMapping(value = "/calculate", method = RequestMethod.POST) 
